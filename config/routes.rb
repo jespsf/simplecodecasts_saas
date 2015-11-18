@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :contacts
   get '/about' => 'pages#about' #this translates to about_path
   root 'pages#home'
